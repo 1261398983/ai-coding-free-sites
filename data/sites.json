@@ -342,7 +342,7 @@
         "approx": false,
         "note": "按量计费（人民币），注册不发赠额；国模分组 0.08x（官网价 8%）。"
       },
-      "signupUrl": "https://api.97wl.cc/r/T8KiaeGU",
+      "signupUrl": "https://api.97wl.cc/register",
       "homeUrl": "https://api.97wl.cc",
       "docsUrl": null,
       "statusApi": "https://api.97wl.cc/v1/models",
