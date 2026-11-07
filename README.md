@@ -15,7 +15,6 @@
   <a href="https://gorouter.app/sign-up?aff=eZeS" rel="nofollow noopener"><b>GoRouter 注册</b></a> ·
   <a href="https://api.justwoker.icu/register?aff=kTKc" rel="nofollow noopener"><b>JustDoWork 注册</b></a> ·
   <a href="https://workbuddy.ai/invite?code=J3YMXR29" rel="nofollow noopener"><b>WorkBuddy 注册</b></a> ·
-  <a href="https://api.97wl.cc/register" rel="nofollow noopener"><b>97wl 注册</b></a>
 </p>
 
 <p align="center"><a href="https://1261398983.github.io/ai-coding-free-sites/compare/">📊 按次 vs 按量折算横评</a> · <a href="https://1261398983.github.io/ai-coding-free-sites/status/">🩺 可用性历史</a> · <a href="https://1261398983.github.io/ai-coding-free-sites/changelog/">🗓 变动日志</a> · <a href="https://1261398983.github.io/ai-coding-free-sites/feed.xml">🔔 Atom 订阅</a></p>
@@ -31,7 +30,6 @@
 | **GoRouter** | 🔴 异常 | **$70** | 注册 $50 + 本页邀请 $20 | 支持签到 | Anthropic + OpenAI | 2 个可查 | [GitHub 注册 →](https://gorouter.app/sign-up?aff=eZeS) |
 | **JustDoWork** | 🟢 在线 | **≈$92** | 注册 $70 + 首签 ≈$22 | ≈$22/天 | Anthropic + OpenAI | 需登录查看 | [GitHub 注册 →](https://api.justwoker.icu/register?aff=kTKc) |
 | **WorkBuddy** | 🟢 在线 | **≈2100 积分** | 注册 2000 积分 + 首签 ≈100 积分 | ≈100 积分/天 | 桌面客户端 | 需登录查看 | [点此注册 →](https://workbuddy.ai/invite?code=J3YMXR29) |
-| **97wl** | 🟢 在线 | 站内公示 | — | — | Anthropic + OpenAI | 需登录查看 | [点此注册 →](https://api.97wl.cc/register) |
 
 > 「首日可得」= 注册基础额度 + 本页邀请链接额度 + 当天能领的签到额度（每日重置额度池的站点按一天的池子算）；模型、价格、在线状态由脚本抓取站点公开接口自动生成，最后更新：`2026-11-07 06:00 UTC`。
 >
@@ -608,11 +606,9 @@ curl -s https://api.justwoker.icu/v1/chat/completions \
 
 ---
 
-### 🟢 97wl
 
 > 中转聚合站 · 国模分组 0.08x（官网价 8%），同一个 base URL 同时吃 OpenAI 与 Anthropic
 
-<a href="https://api.97wl.cc/register" rel="nofollow noopener"><img src="https://img.shields.io/badge/%E7%AB%8B%E5%8D%B3%E6%B3%A8%E5%86%8C-97wl-brightgreen?style=for-the-badge" alt="注册 97wl"></a>
 
 **为什么值得注册**
 
@@ -640,7 +636,6 @@ curl -s https://api.justwoker.icu/v1/chat/completions \
 
 ```bash
 # macOS / Linux
-export ANTHROPIC_BASE_URL=https://api.97wl.cc
 export ANTHROPIC_AUTH_TOKEN=你在站点后台创建的 Key
 export ANTHROPIC_MODEL=<登录后台查看可用模型名>
 npm install -g @anthropic-ai/claude-code@latest && claude
@@ -648,7 +643,6 @@ npm install -g @anthropic-ai/claude-code@latest && claude
 
 ```powershell
 # Windows PowerShell
-$env:ANTHROPIC_BASE_URL = "https://api.97wl.cc"
 $env:ANTHROPIC_AUTH_TOKEN = "你在站点后台创建的 Key"
 $env:ANTHROPIC_MODEL = "<登录后台查看可用模型名>"
 claude
@@ -660,11 +654,7 @@ claude
 
 ```toml
 model = "<登录后台查看可用模型名>"
-model_provider = "97wl"
 
-[model_providers.97wl]
-name = "97wl"
-base_url = "https://api.97wl.cc/v1"
 env_key = "97WL_API_KEY"
 wire_api = "chat"
 ```
@@ -676,19 +666,16 @@ wire_api = "chat"
 ```python
 from openai import OpenAI
 
-client = OpenAI(api_key="你的 Key", base_url="https://api.97wl.cc/v1")
 resp = client.chat.completions.create(model="<登录后台查看可用模型名>", messages=[{"role": "user", "content": "ping"}])
 print(resp.choices[0].message.content)
 ```
 
-通用客户端只需填两项：**Base URL** = `https://api.97wl.cc/v1`，**API Key** = 站点后台创建的 Key。
 
 </details>
 
 <details><summary><b>连通性自测</b></summary>
 
 ```bash
-curl -s https://api.97wl.cc/v1/chat/completions \
   -H "Authorization: Bearer $KEY" -H "Content-Type: application/json" \
   -d '{"model":"<登录后台查看可用模型名>","messages":[{"role":"user","content":"只回复 OK"}]}'
 ```
