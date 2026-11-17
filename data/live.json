@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-17T07:57:24.023Z",
+  "generatedAt": "2026-11-17T20:58:16.983Z",
   "sites": [
     {
       "id": "agentrouter",
-      "checkedAt": "2026-11-17T07:56:45.569Z",
+      "checkedAt": "2026-11-17T20:57:38.998Z",
       "online": true,
-      "latencyMs": 324,
+      "latencyMs": 334,
       "error": "invalid json",
       "systemName": "Agent Router",
       "version": "init-20260901-138138e7",
@@ -147,7 +147,7 @@
       "signup": {
         "status": 200,
         "ok": true,
-        "ms": 1093,
+        "ms": 978,
         "attempts": 1
       },
       "mirrors": [
@@ -177,10 +177,10 @@
     },
     {
       "id": "tabitoken",
-      "checkedAt": "2026-11-17T07:56:44.586Z",
+      "checkedAt": "2026-11-17T20:57:38.383Z",
       "apiOk": false,
       "pricingOk": false,
-      "latencyMs": 189,
+      "latencyMs": 435,
       "error": "HTTP 525",
       "systemName": "TaBiAI",
       "version": "init-20260817-f880a343",
@@ -272,7 +272,7 @@
       "signup": {
         "status": 403,
         "ok": false,
-        "ms": 252,
+        "ms": 362,
         "attempts": 1
       },
       "mirrors": [],
@@ -294,11 +294,11 @@
     },
     {
       "id": "gorouter",
-      "checkedAt": "2026-11-17T07:57:24.016Z",
+      "checkedAt": "2026-11-17T20:58:16.977Z",
       "apiOk": false,
       "pricingOk": false,
-      "latencyMs": 20001,
-      "error": "timeout",
+      "latencyMs": 19528,
+      "error": "HTTP 522",
       "systemName": "GoRouter",
       "version": "init-20260813-3cd90886",
       "registerOpen": true,
@@ -355,7 +355,7 @@
       "signup": {
         "status": 403,
         "ok": false,
-        "ms": 293,
+        "ms": 402,
         "attempts": 1
       },
       "mirrors": [],
@@ -377,9 +377,9 @@
     },
     {
       "id": "justdowork",
-      "checkedAt": "2026-11-17T07:56:59.220Z",
+      "checkedAt": "2026-11-17T20:58:13.950Z",
       "online": true,
-      "latencyMs": 19966,
+      "latencyMs": 19736,
       "error": null,
       "systemName": "JustDoWork",
       "version": "v1.0.0-rc.23",
@@ -405,8 +405,8 @@
       "signup": {
         "status": 522,
         "ok": false,
-        "ms": 19914,
-        "attempts": 1
+        "ms": 19736,
+        "attempts": 2
       },
       "mirrors": [],
       "apiOk": true,
@@ -419,10 +419,10 @@
     },
     {
       "id": "workbuddy",
-      "checkedAt": "2026-11-17T07:56:40.925Z",
+      "checkedAt": "2026-11-17T20:57:34.798Z",
       "apiOk": true,
       "pricingOk": false,
-      "latencyMs": 1671,
+      "latencyMs": 2083,
       "error": null,
       "systemName": null,
       "version": null,
@@ -446,7 +446,7 @@
       "signup": {
         "status": 200,
         "ok": true,
-        "ms": 1663,
+        "ms": 2082,
         "attempts": 1
       },
       "mirrors": [],
